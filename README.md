@@ -1,2 +1,3 @@
-# vim_presentation
-Vim
+# VIM Intro
+
+A vim basics
