@@ -33,9 +33,12 @@
 
 ## Modal Editing
 
+* `:help vim-modes`
 * Insert Mode  - editing the file
 * Visual Mode  - highlight portions of the file to manipulate at once
-* Ex Mode      - command mode
+* Command Mode - :commands. Executes a command and comes back to normal mode
+* Ex Mode      - :commands. Stays in command mode
+* Replace Mode - replace characters under the cursor
 * Normal Mode  - navigate through the file
 
 ***
@@ -54,11 +57,25 @@
 
 ***
 
-### Ex - Command Mode
+### Command mode
 
 * Config and advanced commands
 * set number         - enable line number
 * set relativenumber - enable relative number
+
+***
+
+### Ex mode
+
+* Enters all time command mode
+
+***
+
+### Replace Mode
+
+* r\<replace-char\>      - replace a char.
+* R\<replace-chars\>     - replace more than one character
+* \<Esc\>                - move to normal mode
 
 ***
 
@@ -86,7 +103,10 @@
 * ?      - search *backward*. /searchpattern
 
 * ?      - search the word under the cursor *forward*
-* #      - search the word under the cursor *backward*
+* \#     - search the word under the cursor *backward*
+
+* n      - move in search direction
+* N      - move in reverse direction
 
 * x      - delete/cut a char *after* the cursor [Del]
 * X      - delete/cut a char *before* the cursor [Backspace]
@@ -94,6 +114,8 @@
 * yy     - yank a line
 * dd     - delete/cut a line
 * p      - paste
+
+***
 
 ### Text Object
 
@@ -143,9 +165,11 @@
 
 ### Macros
 
-* q<register>  - record a macro in <register>
-* q            - stop recoding a macro
-* @<register>  - run macro
+* q\<register\>  - record a macro in <register>
+* q              - stop recoding a macro
+* @\<register\>  - run macro
+
+***
 
 ## More vim
 
@@ -153,6 +177,8 @@
 * [http://derekwyatt.org/vim/tutorials/index.html](Video for Novice, Intermediate to Advanced vimmers)
 * [http://vim-adventures.com/](Vim Adventure)
 * [http://www.vimsnake.com/](Vim snake)
+* [https://www.youtube.com/watch?v=5r6yzFEXajQ](Vim + tmux)
+* [http://www.fprintf.net/vimCheatSheet.html](vim cheatsheet)
 
 ***
 
