@@ -1,9 +1,22 @@
 # Vim session
 
-## Open & Close Vim
 
-* sudo apt-get install vim
-* open `vim filename.txt`
+## Install Vim
+
+* `sudo apt-get install vim`
+
+***
+
+## Open & Close Vim terminal
+
+* `vim filename.txt`
+* q                   - quit
+* w                   - write
+* !                   - force
+* Esc, C-c and C-[    - switch to normal mode
+
+### Usage
+
 * \<Esc\>:wq
 * \<Esc\>:q
 * \<Esc\>:q!
@@ -44,6 +57,8 @@
 ### Ex - Command Mode
 
 * Config and advanced commands
+* set number         - enable line number
+* set relativenumber - enable relative number
 
 ***
 
@@ -51,6 +66,34 @@
 ![Normal mode](https://raw.githubusercontent.com/aravindps/vim_presentation/master/vim_shortcuts.png)
 
 ***
+
+### Normal Mode (continued)
+
+* nG     - move to nth line number
+* 1G     - move to 1st line
+* GG     - move to last line
+
+* i      - insert under the cursor
+* a      - append after the cursor
+* I      - insert at the *start* of the line
+* A      - append at the *end* of the line
+* ~      - toggle case
+
+* o      - add new line at the *bottom* and enter insert mode
+* O      - add new line at the *top* and enter insert mode
+
+* /      - search *forward*. /searchpattern
+* ?      - search *backward*. /searchpattern
+
+* ?      - search the word under the cursor *forward*
+* #      - search the word under the cursor *backward*
+
+* x      - delete/cut a char *after* the cursor [Del]
+* X      - delete/cut a char *before* the cursor [Backspace]
+* y      - yank
+* yy     - yank a line
+* dd     - delete/cut a line
+* p      - paste
 
 ### Text Object
 
@@ -83,17 +126,26 @@
 
 ### Usage
 
-* **{command}{count}{motion}{text-object}**
-* yi)
-* yi}
+**{command}{count}{motion}{text-object}**
+
+* d2w
+* ci)
+* yi"
 
 ***
 
 ### Repeat Operator
-* ; and , operator
-* . operator
+
+* ;(semi-colon) and ,(comma) operator - repeat motion forward and backword
+* .(dot) operator                     - repeat last edit
 
 ***
+
+### Macros
+
+* q<register>  - record a macro in <register>
+* q            - stop recoding a macro
+* @<register>  - run macro
 
 ## More vim
 
@@ -101,3 +153,7 @@
 * [http://derekwyatt.org/vim/tutorials/index.html](Video for Novice, Intermediate to Advanced vimmers)
 * [http://vim-adventures.com/](Vim Adventure)
 * [http://www.vimsnake.com/](Vim snake)
+
+***
+
+-># Thanks<-
